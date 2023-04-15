@@ -1,0 +1,21 @@
+stages:
+  - build
+
+variables:
+  CONTAINER_RELEASE_IMAGE: fapogram-service
+  CONTAINER_REGISTRY: registry.kmiac.ru:5000
+  CONTAINER_CACHEBUST: $CI_PIPELINE_IID
+
+build_react:
+  stage: build
+  tags:
+    - fapogram-prod
+  before_script:
+    - echo 'Hello from before'
+    - cd ./frontend
+    - pwd
+  script:
+    - echo 'Hello from script'
+    - pwd
+    - echo $CI_REGISTRY_USER
+  only: ['tags']

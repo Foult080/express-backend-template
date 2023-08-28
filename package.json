@@ -1,0 +1,38 @@
+{
+  "name": "exptress-backend-template",
+  "version": "0.1.0",
+  "description": "template express project",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node app",
+    "test": "mocha --exit",
+    "tests": "mocha --recursive --exit"
+  },
+  "keywords": [
+    "template",
+    "express",
+    "backend"
+  ],
+  "author": "Foult080 <foult080@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.8.0",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

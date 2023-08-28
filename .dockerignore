@@ -1,0 +1,10 @@
+# basic
+/node_modules
+Dockerfile
+.git
+.env
+.vscode
+.gitignore
+.gitlab-ci.yml
+.test.env
+prod.env
